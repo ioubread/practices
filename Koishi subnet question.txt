@@ -1,0 +1,158 @@
+Question: https://cdn.discordapp.com/attachments/469090169673220107/1113473296382570617/image.png
+References:
+- https://www.youtube.com/watch?v=abtwx5E5Wb0
+- https://www.calculator.net/ip-subnet-calculator.html
+
+
+
+
+First, size of 214.97.254.0/27 as a network
+
+
+/27 is 11111111.11111111.11111110.00000000
+                               [         ]
+                                    ^
+                                   Host
+                                  Portion
+
+
+
+
+Splitting the subnet mask to Network Portion and Host Portion
+11111111.11111111.1111111|0.00000000
+
+Calculating the network of 214.97.254.0/27
+
+Network   = 11111111.11111111.1111111|0.00000000 = 214.97.254.0
+1st       = 11111111.11111111.1111111|0.00000001 = 214.97.254.1
+Last      = 11111111.11111111.1111111|1.11111110 = 214.97.255.254
+Broadcast = 11111111.11111111.1111111|1.11111111 = 214.97.255.255
+
+
+
+
+
+
+
+Subnet A requires 250 (Closest accomodation is 256)
+256 = 2**8, AKA 2 to the power of 8
+
+32 - 8 = 24
+
+Subnet A shall be 214.97.254.0/24
+
+Splitting the subnet mask to Network Portion and Host Portion
+11111111.11111111.11111111.|00000000
+
+Calculating the subnet of 214.97.254.0/24
+
+Network   = 11111111.11111111.11111111.|00000000 = 214.97.254.0
+1st       = 11111111.11111111.11111111.|00000001 = 214.97.254.1
+Last      = 11111111.11111111.11111111.|11111110 = 214.97.254.254
+Broadcast = 11111111.11111111.11111111.|11111111 = 214.97.254.255
+
+Unused remaining: 214.97.255.0 to 214.97.255.255
+
+
+
+Subnet B requires 120 (Closest accomodation is 128)
+128 = 2**7, AKA 2 to the power of 7
+
+32 - 7 = 25
+
+Subnet B shall be 214.97.255.0/25
+
+Splitting the subnet mask to Network Portion and Host Portion
+11111111.11111111.11111111.1|0000000
+
+Calculating the subnet of 214.97.255.0/25
+Network   = 11111111.11111111.11111111.1|0000000 = 214.97.255.0
+1st       = 11111111.11111111.11111111.1|0000001 = 214.97.255.1
+Last      = 11111111.11111111.11111111.1|1111110 = 214.97.255.126
+Broadcast = 11111111.11111111.11111111.1|1111111 = 214.97.255.127
+
+Unused remaining: 214.97.255.128 to 214.97.255.255
+
+
+
+Subnet C requires 50 (closest accomodation is 64)
+64 = 2**6, AKA 2 to the power of 6
+
+32 - 6 = 26
+
+Subnet C shall be 214.97.255.128/26
+
+Splitting the subnet mask to Network Portion and Host Portion
+11111111.11111111.11111111.11|000000
+
+Calculating the subnet of 214.97.255.128/26
+Network   = 11111111.11111111.11111111.11|000000 = 214.97.255.128
+1st       = 11111111.11111111.11111111.11|000001 = 214.97.255.129
+Last      = 11111111.11111111.11111111.11|111110 = 214.97.255.190
+Broadcast = 11111111.11111111.11111111.11|111111 = 214.97.255.191
+
+Unused remaining: 214.97.255.192 to 214.97.255.255
+
+
+
+
+Subnet D requires 2 (closest accomodation is 4, because the Broadcast makes the requirement 3 instead of 2)
+4 = 2**2, AKA 2 to the power of 2
+
+32 - 2 = 30
+
+Subnet D shall be 214.97.255.192/30
+
+Splitting the subnet mask to Network Portion and Host Portion
+11111111.11111111.11111111.111111|00
+
+Calculating the subnet of 214.97.255.192/30
+Network   = 11111111.11111111.11111111.111111|00 = 214.97.255.192
+1st       = 11111111.11111111.11111111.111111|01 = 214.97.255.193
+Last      = 11111111.11111111.11111111.111111|10 = 214.97.255.194
+Broadcast = 11111111.11111111.11111111.111111|11 = 214.97.255.195
+
+Unused remaining: 214.97.255.196 to 214.97.255.255
+
+
+
+
+Subnet E requires 2 (closest accomodation is 4, because the Broadcast makes the requirement 3 instead of 2)
+4 = 2**2, AKA 2 to the power of 2
+
+32 - 2 = 30
+
+Subnet E shall be 214.97.255.196/30
+
+Splitting the subnet mask to Network Portion and Host Portion
+11111111.11111111.11111111.111111|00
+
+Calculating the subnet of 214.97.255.196/30
+Network   = 11111111.11111111.11111111.111111|00 = 214.97.255.196
+1st       = 11111111.11111111.11111111.111111|01 = 214.97.255.197
+Last      = 11111111.11111111.11111111.111111|10 = 214.97.255.198
+Broadcast = 11111111.11111111.11111111.111111|11 = 214.97.255.199
+
+Unused remaining: 214.97.255.200 to 214.97.255.255
+
+
+
+
+
+Subnet F requires 2 (closest accomodation is 4, because the Broadcast makes the requirement 3 instead of 2)
+4 = 2**2, AKA 2 to the power of 2
+
+32 - 2 = 30
+
+Subnet F shall be 214.97.255.200/30
+
+Splitting the subnet mask to Network Portion and Host Portion
+11111111.11111111.11111111.111111|00
+
+Calculating the subnet of 214.97.255.200/30
+Network   = 11111111.11111111.11111111.111111|00 = 214.97.255.200
+1st       = 11111111.11111111.11111111.111111|01 = 214.97.255.201
+Last      = 11111111.11111111.11111111.111111|10 = 214.97.255.202
+Broadcast = 11111111.11111111.11111111.111111|11 = 214.97.255.203
+
+Unused remaining: 214.97.255.204 to 214.97.255.255
